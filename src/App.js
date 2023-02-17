@@ -2,14 +2,14 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import AllRecipes from './features/allRecipes/AllRecipes';
 import { Navbar } from './components/Navbar';
-import { Recipe } from './components/Recipe';
+import { RecipeDetail } from './components/RecipeDetail';
 
 function App() {
   return (
     <Routes>
     <Route element={<Navbar />}>
       <Route path='/' element={<AllRecipes />} />
-      <Route path='/recipe' element={<Recipe />} />
+      <Route path='/recipe' element={<RecipeDetail />} />
     </Route>
     </Routes>
   );

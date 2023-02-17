@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { selectAllRecipes } from "./allRecipesSlice";
 import { loadAllRecipes } from "./allRecipesSlice";
-import { Link } from "react-router-dom";
+import { Recipe } from '../../components/Recipe';
 
 const AllRecipes = () => {
   const allRecipes = useSelector(selectAllRecipes);
@@ -25,12 +25,7 @@ const AllRecipes = () => {
             {allRecipes.map((recipe) => (
                 <li key={recipe.idMeal}>
                     <div>
-                        <Link to={"/recipe"}  state={ recipe }>
-                            <img src={recipe.strMealThumb} alt="recipe img" width={100}/>
-                        </Link>                        
-                        <Link to={"/recipe"}  state={ recipe }>
-                            <h4>{recipe.strMeal}</h4>
-                        </Link>
+                        <Recipe recipe={recipe} />
                     </div>
                 </li>
             ))}
