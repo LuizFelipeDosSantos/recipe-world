@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { selectRecipesByCategory } from "./recipesByCategorySlice";
 import { loadRecipesByCategory } from "./recipesByCategorySlice";
-import { RecipeCard } from '../../components/RecipeCard';
+import RecipeCard from '../../components/RecipeCard';
 
 const RecipesByCategory = (props) => {
   const { category } = props;

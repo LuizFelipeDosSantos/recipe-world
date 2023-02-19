@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { selectAllRecipes } from "./allRecipesSlice";
 import { loadAllRecipes } from "./allRecipesSlice";
-import { RecipeCard } from '../../components/RecipeCard';
+import RecipeCard from '../../components/RecipeCard';
 
 const AllRecipes = () => {
   const allRecipes = useSelector(selectAllRecipes);

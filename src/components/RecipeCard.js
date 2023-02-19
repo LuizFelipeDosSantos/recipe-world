@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export function RecipeCard(props) {
+const RecipeCard = (props) => {
     const { recipe } = props;
 
     return (
@@ -14,3 +14,5 @@ export function RecipeCard(props) {
         </div>
     );
 }
+
+export default RecipeCard;

@@ -1,8 +1,8 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import AllRecipes from './features/allRecipes/AllRecipes';
 import { Navbar } from './components/Navbar';
-import { Recipe } from './components/Recipe';
+import AllRecipes from './features/allRecipes/AllRecipes';
+import Recipe from './features/recipe/Recipe';
 import RecipesByCategory from './features/recipesByCategory/RecipesByCategory';
 
 function App() {
