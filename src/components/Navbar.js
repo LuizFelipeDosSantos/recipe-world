@@ -20,8 +20,8 @@ export function Navbar() {
                     <p>Seafood</p>
                 </NavLink>
 
-                <NavLink to="/veggie">
-                    <p>Veggie</p>
+                <NavLink to="/vegetarian">
+                    <p>Vegetarian</p>
                 </NavLink>
             </nav>
 

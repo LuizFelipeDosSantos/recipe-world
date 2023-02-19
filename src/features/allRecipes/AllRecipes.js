@@ -24,9 +24,7 @@ const AllRecipes = () => {
         <ul>
             {allRecipes.map((recipe) => (
                 <li key={recipe.idMeal}>
-                    <div>
-                        <RecipeCard recipe={recipe} />
-                    </div>
+                    <RecipeCard recipe={recipe} />
                 </li>
             ))}
         </ul>

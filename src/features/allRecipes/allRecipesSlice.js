@@ -1,11 +1,11 @@
+import axios from "axios";
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 export const loadAllRecipes = createAsyncThunk(
   "allRecipes/getAllRecipes",
   async () => {
-    const data = await fetch("https://www.themealdb.com/api/json/v1/1/search.php?s");
-    const json = await data.json();
-    return json.meals;
+    const response = await axios.get("https://www.themealdb.com/api/json/v1/1/search.php?s");
+    return response.data.meals;
   }
 );
 
