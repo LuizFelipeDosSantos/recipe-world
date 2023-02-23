@@ -4,17 +4,19 @@ import { Navbar } from './components/Navbar';
 import AllRecipes from './features/allRecipes/AllRecipes';
 import Recipe from './features/recipe/Recipe';
 import RecipesByCategory from './features/recipesByCategory/RecipesByCategory';
+import RecipesByName from './features/recipesByName/RecipesByName';
 
 function App() {
   return (
     <Routes>
     <Route element={<Navbar />}>
-      <Route path='/' element={<AllRecipes />} />
-      <Route path='/recipe' element={<Recipe />} />
+      <Route path='/' element={<AllRecipes />}/>
+      <Route path='/recipe' element={<Recipe />}/>
       <Route path='/beef' element={<RecipesByCategory category='Beef'/>}/>
       <Route path='/chicken' element={<RecipesByCategory category='Chicken'/>}/>
       <Route path='/seafood' element={<RecipesByCategory category='Seafood'/>}/>
       <Route path='/vegetarian' element={<RecipesByCategory category='Vegetarian'/>}/>
+      <Route path='/search' element={<RecipesByName />}/>
     </Route>
     </Routes>
   );

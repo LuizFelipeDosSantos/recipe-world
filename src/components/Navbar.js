@@ -1,4 +1,5 @@
 import { Outlet, NavLink } from "react-router-dom";
+import { Search } from "./Search";
 
 export function Navbar() {
     return (
@@ -7,7 +8,9 @@ export function Navbar() {
                 <NavLink to="/">
                     <p>Recipe World</p>
                 </NavLink>
-
+                <Search />
+            </nav>
+            <nav className="navbar">
                 <NavLink to="/beef">
                     <p>Beef</p>
                 </NavLink>
